@@ -1,0 +1,12 @@
+{
+  "name": "graphql-proxy-cache",
+  "version": "0.0.1-alpha",
+  "description": "",
+  "main": "server.js",
+  "keywords": [],
+  "author": "mittmannv8@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
