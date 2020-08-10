@@ -15,7 +15,6 @@ if (!fs.existsSync(cacheDir)) {
 
 http
   .createServer((req, res) => {
-    // console.log(`request: [${req.method}] ${req.url}`);
     let requestBody = "";
 
     req.on("data", chunk => {
@@ -83,7 +82,6 @@ http
 
             fs.writeFile(fileCache, responseToCache, a => {
               console.log(`[${new Date().toISOString()}] [${req.method}] response cached for: [${requestBody.slice(0, 30)}]`);
-              console.log(`Result wrote in ${fileCache}`);
             });
           }
         );
